@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gloss Glamour</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <button id="cart-button">Carrito (<span id="cart-count">0</span>)</button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <h2>Bienvenido a Gloss Glamour</h2>
+            <p>Descubre nuestra exclusiva colección de glosses que te harán brillar.</p>
+            <img src="img/g.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>En Gloss Glamour, nos especializamos en ofrecer productos de belleza de alta calidad que te ayudan a destacar. Nuestra misión es proporcionar glosses innovadores que realcen tu belleza natural y te hagan sentir segura y radiante.</p>
+            <p>Todos nuestros productos están formulados con ingredientes de primera calidad, y nos enorgullecemos de ofrecer opciones para todos los gustos y necesidades. Desde glosses brillantes hasta fórmulas sedosas y lujosas, cada producto está diseñado para ofrecer una experiencia de belleza única.</p>
+        </div>
+    </section>
+    
+    <section id="products">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <img src="img/1.webp" alt="Gloss Brillante">
+                <h3>Gloss Brillante</h3>
+                <p>$10.00</p>
+                <button class="add-to-cart" data-name="Gloss Brillante" data-price="10">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="img/2.webp" alt="Gloss Sedoso">
+                <h3>Gloss Sedoso</h3>
+                <p>$12.00</p>
+                <button class="add-to-cart" data-name="Gloss Sedoso" data-price="12">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="img/3.jpeg" alt="Gloss Lujoso">
+                <h3>Gloss Lujoso</h3>
+                <p>$15.00</p>
+                <button class="add-to-cart" data-name="Gloss Lujoso" data-price="15">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Para consultas, envíanos un correo a <a href="mailto:info@glossglamour.com">info@glossglamour.com</a>.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <p>&copy; 2024 Gloss Glamour - Angie Landero.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: $0.00</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
